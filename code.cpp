@@ -4,12 +4,12 @@ using namespace std;
 
 int FirstFactorial(int num) { 
 
-  // code goes here   
-  int x = 1;
- for(int i = 1; i <= num; i++)
- {  x *= i;                       } 
-  return x;
-            
+  if(num == 1)
+  {
+    return 1;
+  }
+  
+  return num * FirstFactorial(num - 1);            
 }
 
 int main() { 
